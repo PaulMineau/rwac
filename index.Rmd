@@ -26,18 +26,14 @@ output: ioslides_presentation
 
 
 ## More Exploration
-Now find more data sources. You can filter by category, and by content type. There are maps, graphs, and raw data.Your job is to find some.
+Visit <a href="http://data.seattle.gov" target="_blank">data.seattle.gov</a>. Now find more data sources. You can filter by category, and by content type. There are maps, graphs, and raw data.Your job is to find some.
 
-## Data Science publishing made easy
-I generated this slideshow entirely in R Studio using knitr. The git repository for this site is at https://github.com/PaulMineau/rwac.git
+## Git Repo
+https://github.com/PaulMineau/rwac.git
+I generated this slideshow entirely in R Studio using knitr. The git repository for this site is at 
 Pushing to this website will automatically deploy to this website. Any d3 can easily be added and checked in. This slideshow will become a tour through some of these visualizations and data sets as some story is told, and the viewer is no longer without a cause.
 
 ## R Script output in the slideshow
-
-```{r}
-summary(cars)
-```
-
 
 ```{r, echo=FALSE}
 plot(cars)
