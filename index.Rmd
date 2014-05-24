@@ -7,13 +7,12 @@ output: ioslides_presentation
 
 ## Rebel Without a Cause
 <img src="Albert-Camus.jpg" />
-Use the arrow keys to move forward and back.
 
 ## The Mission
 
-- Phase I (one hour) We don't know what the mission is, and at this phase, we are rebels without a cause. We will analyize and find potential causes.
+- Phase I (one hour) We don't know what the mission is, and at this phase, we are rebels without a cause. We will analyze the data available and suggest various hypothesis.
 - Phase II - By utilizing Infographics, and data visualization we will explain the data to ourselves and others. Any data scientists will build models that provide non-obvious insight
-- Phase III - publish an article, design a graffiti based Infographic, potentially publish the graffiti at approved location (tent city?)
+- Phase III - publish an article, design a graffiti based Infographic, potentially publish the graffiti at approved location (tent city?). Publish a slideshow like this which tells the story of our effort today.
 
 ## Data Exploration 
 
