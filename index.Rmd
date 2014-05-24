@@ -1,0 +1,47 @@
+---
+title: "http://RWAC.Guru"
+author: "Paul Mineau - vigilante data scientist"
+date: "Wednesday, May 21, 2014"
+output: ioslides_presentation
+---
+
+## Rebel Without a Cause
+<img src="Albert-Camus.jpg" />
+Use the arrow keys to move forward and back.
+
+## The Mission
+
+- Phase I (one hour) We don't know what the mission is, and at this phase, we are rebels without a cause. We will analyize and find potential causes.
+- Phase II - By utilizing Infographics, and data visualization we will explain the data to ourselves and others. Any data scientists will build models that provide non-obvious insight
+- Phase III - publish an article, design a graffiti based Infographic, potentially publish the graffiti at approved location (tent city?)
+
+## Data Exploration 
+
+- Here's some visualizations to get started. Please find more like these at <a href="http://data.seattle.gov" target="_blank">data.seattle.gov</a>
+
+<div><iframe width="500px" title="SeattleCrime" height="425px" src="https://data.seattle.gov/w/fgy8-byjy/2myu-6xk5?cur=gnSzaeVKuZO&from=root" frameborder="0" scrolling="no"><a href="https://data.seattle.gov/Public-Safety/SeattleCrime/fgy8-byjy" title="SeattleCrime" target="_blank">SeattleCrime</a></iframe></div>
+
+
+## Seattle Department Expenditure rollup
+<div><iframe width="500px" title="Department Rollup - Pie Chart" height="425px" src="https://data.seattle.gov/w/sfv9-ahhf/2myu-6xk5?cur=i9QiT5MDj4f&from=root" frameborder="0" scrolling="no"><a href="https://data.seattle.gov/Finance/Department-Rollup-Pie-Chart/sfv9-ahhf" title="Department Rollup - Pie Chart" target="_blank">Department Rollup - Pie Chart</a></iframe></div>
+
+
+## More Exploration
+Now find more data sources. You can filter by category, and by content type. There are maps, graphs, and raw data.Your job is to find some.
+
+## Data Science publishing made easy
+I generated this slideshow entirely in R Studio using knitr. The git repository for this site is at https://github.com/PaulMineau/rwac.git
+Pushing to this website will automatically deploy to this website. Any d3 can easily be added and checked in. This slideshow will become a tour through some of these visualizations and data sets as some story is told, and the viewer is no longer without a cause.
+
+## R Script output in the slideshow
+
+```{r}
+summary(cars)
+```
+
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+The End
