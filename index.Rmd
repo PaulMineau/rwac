@@ -1,42 +1,86 @@
 ---
-title: "http://RWAC.Guru"
-author: "Paul Mineau - vigilante data scientist"
-date: "Wednesday, May 21, 2014"
+title: "http://rwac.guru"
+author: "Paul Mineau - data scientist"
+date: "Saturday, May 29, 2014"
 output: ioslides_presentation
 ---
 
-## Rebel Without a Cause
+## A New Kind Of Journalism
+
+- Data Science team for the city of Seattle
+- interdisciplinary team composed of 4 roles: Data Scientists, Creatives, Journalists, and Developers.
+- Data Driven discussions on the Quality of programs
+
+## Conceptualize the Workflow
+- Trying to understand homelessness given the data sets: depressing.
+- The answer to questions where data quality is poor (or doesn't exist) may be, "help us obtain more data". 
+- http://rwac.guru is a conversation between citizens and the data science team. 
+<img src="rwacquestion1.gif" />
+
+## wide range of possible questions
+- To what degree can we answer citizen questions?
+<img src="rwacquestion2.gif" />
+
+## plan
+
+- Today we will generate several citizen questions (1/2 hour)
+- Next is data exploration (1/2 hour) - data.seattle.gov 
+- Design and development of assets
+- Publish
+
+## Creative Responsibility
+
+- Infographics
+- Cartoons 
+
+## Developers
+
+- d3 data visualizations
+- Map visualizations (leaflet, d3, etc)
+- single page site with various pivots on assets, similar to data.seattle.gov
+
+## Data Scientists - insights into data
+
+- Statistical analysis, prediction, summarization using available datasets
+- Clean and publish datasets obtained from non-profits 
+
+## Journalists
+
+- Interaction with the citizen
+- Interaction with the non-profits and organizations, obtaining data
+
+## The Rebel without a cause
+
 <img src="Albert-Camus.jpg" />
 
-## The Mission
+## the guru is the team behind the curtain
 
-- Phase I (one hour) We don't know what the mission is, and at this phase, we are rebels without a cause. We will analyze the data available and suggest various hypothesis.
-- Phase II - By utilizing Infographics, and data visualization we will explain the data to ourselves and others. Any data scientists will build models that provide non-obvious insight
-- Phase III - publish an article, design a graffiti based Infographic, potentially publish the graffiti at approved location (tent city?). Publish a slideshow like this which tells the story of our effort today.
+- we will recommend work to the rebel without a cause
+- we will recommend upward mobility to the poor
+- do we have the right data sets to do this? No,  not yet. 
 
-## Data Exploration 
-
-- Here's some visualizations to get started. Please find more like these at <a href="http://data.seattle.gov" target="_blank">data.seattle.gov</a>
-
+## good assets 
 <div><iframe width="500px" title="SeattleCrime" height="425px" src="https://data.seattle.gov/w/fgy8-byjy/2myu-6xk5?cur=gnSzaeVKuZO&from=root" frameborder="0" scrolling="no"><a href="https://data.seattle.gov/Public-Safety/SeattleCrime/fgy8-byjy" title="SeattleCrime" target="_blank">SeattleCrime</a></iframe></div>
 
 
 ## Seattle Department Expenditure rollup
 <div><iframe width="500px" title="Department Rollup - Pie Chart" height="425px" src="https://data.seattle.gov/w/sfv9-ahhf/2myu-6xk5?cur=i9QiT5MDj4f&from=root" frameborder="0" scrolling="no"><a href="https://data.seattle.gov/Finance/Department-Rollup-Pie-Chart/sfv9-ahhf" title="Department Rollup - Pie Chart" target="_blank">Department Rollup - Pie Chart</a></iframe></div>
 
-
-## More Exploration
-Visit <a href="http://data.seattle.gov" target="_blank">data.seattle.gov</a>. Now find more data sources. You can filter by category, and by content type. There are maps, graphs, and raw data.Your job is to find some.
-
 ## Git Repo
 https://github.com/PaulMineau/rwac.git
 I generated this slideshow entirely in R Studio using knitr. The git repository for this site is at 
-Pushing to this website will automatically deploy to this website. Any d3 can easily be added and checked in. This slideshow will become a tour through some of these visualizations and data sets as some story is told, and the viewer is no longer without a cause.
+Pushing to the repo will automatically deploy all content to the website. 
 
-## R Script output in the slideshow
+All datasets so far from <a href="http://data.seattle.gov">data.seattle.gov</a>
+<img src="rwacquestion1.gif" />
 
+## we will find correlations in data
 ```{r, echo=FALSE}
-plot(cars)
+require(graphics)
+## give the data set in the form it is used in S-PLUS:
+longley.x <- data.matrix(longley[, 1:6])
+longley.y <- longley[, "Employed"]
+pairs(longley, main = "longley data")
 ```
 
 The End
