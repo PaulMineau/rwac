@@ -74,7 +74,7 @@ Pushing to the repo will automatically deploy all content to the website.
 All datasets so far from <a href="http://data.seattle.gov">data.seattle.gov</a>
 <img src="rwacquestion1.gif" />
 
-## we will find correlations in data
+## http://rwac.guru - insight from data
 ```{r, echo=FALSE}
 require(graphics)
 ## give the data set in the form it is used in S-PLUS:
