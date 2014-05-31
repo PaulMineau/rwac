@@ -83,4 +83,4 @@ longley.y <- longley[, "Employed"]
 pairs(longley, main = "longley data")
 ```
 
-Do you want to party with the data sets?
+Do you want to party with the data sets? Epic data party.
