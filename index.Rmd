@@ -55,7 +55,7 @@ output: ioslides_presentation
 
 ## the guru is the team behind the curtain
 
-- we will recommend work to the rebel without a cause
+- we will recommend work to users (most are looking for something to do)
 - we will recommend upward mobility to the poor
 - do we have the right data sets to do this? No,  not yet. 
 
@@ -83,4 +83,4 @@ longley.y <- longley[, "Employed"]
 pairs(longley, main = "longley data")
 ```
 
-The End
+Do you want to party with the data sets?
